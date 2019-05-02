@@ -1,6 +1,9 @@
 ---
-- name: Add repo
-  command: sudo add-apt-repository ppa:deluge-team/ppa
+- name: Add Docker repository.
+  apt_repository:
+    repo: "{{ ppa:deluge-team/ppa }}"
+    state: present
+    update_cache: true
   tags: [Package Installation]
 
 - name: install deluge
