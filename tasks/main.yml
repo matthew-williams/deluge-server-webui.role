@@ -1,5 +1,5 @@
 ---
-- name: Add Docker repository.
+- name: Add Deluge repository.
   apt_repository:
     repo: "ppa:deluge-team/ppa"
     state: present
@@ -13,7 +13,7 @@
     update_cache: yes
   tags: [Package Installation]
 
-- name: "Configure interfaces and bridge 18.04"
+- name: Configure service for deluge
   copy:
     src: deluged.service
     dest: /etc/systemd/system/deluged.service
@@ -27,5 +27,5 @@
   service:
     name: deluged
     state: started
-    enable: yes
+    enabled: yes
   tags: [deluged]
