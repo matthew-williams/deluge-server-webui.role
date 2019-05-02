@@ -1,1 +1,1 @@
-deluge-server-webui.role
+plex-minecraft-server.role

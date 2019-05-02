@@ -1,0 +1,4 @@
+deluge_packages:
+ - deluged
+ - deluge-console
+ - deluge-webui
