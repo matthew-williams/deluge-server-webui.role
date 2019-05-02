@@ -1,0 +1,1 @@
+deluge-server-webui.role
