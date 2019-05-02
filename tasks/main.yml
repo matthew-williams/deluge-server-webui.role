@@ -25,4 +25,4 @@
     name: deluged
     state: started
     enable: yes
-  tags: [deluged]aaaaaaaa
+  tags: [deluged]
