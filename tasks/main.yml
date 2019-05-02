@@ -14,8 +14,8 @@
   tags: [Package Installation]
 
 - name: "Configure interfaces and bridge 18.04"
-  template:
-    src: deluged.service.j2
+  copy:
+    src: deluged.service
     dest: /etc/systemd/system/deluged.service
     owner: root
     group: root
