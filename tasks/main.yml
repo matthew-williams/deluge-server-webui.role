@@ -1,7 +1,7 @@
 ---
 - name: Add Docker repository.
   apt_repository:
-    repo: "{{ ppa:deluge-team/ppa }}"
+    repo: "ppa:deluge-team/ppa"
     state: present
     update_cache: true
   tags: [Package Installation]
